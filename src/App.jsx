@@ -200,6 +200,7 @@ export default function App() {
   const [streak, setStreak] = useState(0);
   const [bestStreak, setBestStreak] = useState(0);
   const [spin, setSpin] = useState(false);
+  const [revealed, setRevealed] = useState(false);
 
   const startGame = useCallback(() => {
     const picked = shuffle(BANK).slice(0, ROUND_SIZE).map((q) => {
@@ -217,6 +218,7 @@ export default function App() {
     setStreak(0);
     setBestStreak(0);
     setSelected(null);
+    setRevealed(false);
     setPhase("quiz");
   }, []);
 
@@ -243,8 +245,9 @@ export default function App() {
     if (index + 1 >= round.length) {
       setPhase("end");
     } else {
-      setIndex((i) => i + 1);
+       setIndex((i) => i + 1);
       setSelected(null);
+      setRevealed(false);
     }
   };
 
@@ -383,6 +386,20 @@ export default function App() {
             {current.prompt}
           </h2>
 
+          {!revealed ? (
+            <div className="mt-6 flex flex-col items-center gap-3 py-4">
+              <p className="text-xs uppercase tracking-widest text-center" style={{ color: "#7a6a45" }}>
+                Take your best guess first, then reveal the options.
+              </p>
+              <button
+                onClick={() => setRevealed(true)}
+                className="px-6 py-2.5 rounded-sm font-semibold tracking-wide uppercase text-xs"
+                style={{ background: "#12211f", color: "#f3ead4" }}
+              >
+                Reveal choices
+              </button>
+            </div>
+          ) : (
           <div className="mt-6 grid grid-cols-1 gap-3">
             {current.options.map((opt, i) => {
               const isCorrect = i === current.answer;
@@ -404,10 +421,11 @@ export default function App() {
                   {opt}
                 </button>
               );
-            })}
+           })}
           </div>
+          )}
 
-          {selected !== null && (
+          {revealed && selected !== null && (
             <div className="mt-5 pt-4 border-t" style={{ borderColor: "#d8c69a" }}>
               <p className="text-sm leading-relaxed" style={{ color: "#3a2f1c" }}>
                 <span className="font-semibold">{selected === current.answer ? "Correct. " : "Not quite. "}</span>
