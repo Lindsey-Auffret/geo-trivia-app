@@ -42,33 +42,33 @@ const BANK = [
   { prompt: "Which country is split into two separate, non-touching pieces by Malaysia on the island of Borneo?", options: ["Brunei", "Malaysia", "Indonesia", "Philippines"], answer: 0, fact: "Brunei's territory forms two enclaves on Borneo's north coast, divided by Malaysian land." },
   { prompt: "Which country runs over 4,000 km along the Pacific while averaging under 200 km wide?", options: ["Chile", "Peru", "Norway", "Vietnam"], answer: 0, fact: "Chile's ribbon-like shape stretches roughly 2,700 miles north-south, averaging only about 110 miles wide." },
 
-  // ---- Top 5 countries by... ----
-  { prompt: "Which of these is one of the 5 largest countries in the world by total area?", options: ["Canada", "Australia", "India", "Argentina"], answer: 0, fact: "Top 5 by area: Russia, Canada, the United States, China, and Brazil." },
-  { prompt: "Which of these is one of the 5 most populous countries in the world?", options: ["Indonesia", "Nigeria", "Brazil", "Bangladesh"], answer: 0, fact: "Top 5 by population: India, China, the United States, Indonesia, and Pakistan." },
-  { prompt: "Which of these is one of the 5 largest economies in the world by nominal GDP?", options: ["Germany", "France", "India", "Italy"], answer: 0, fact: "Top 5 by nominal GDP: United States, China, Germany, Japan, and the United Kingdom." },
-  { prompt: "Which of these ranks among the top 5 economies in the world by GDP adjusted for purchasing power (PPP)?", options: ["India", "Germany", "Indonesia", "Brazil"], answer: 0, fact: "By GDP PPP the order shifts: China, United States, India, Russia, and Japan \u2014 India outranks Germany and Japan on this measure." },
-  { prompt: "Which of these is one of the top 5 exporters of physical goods (merchandise) in the world?", options: ["Netherlands", "Japan", "France", "South Korea"], answer: 0, fact: "Top 5 merchandise exporters: China, the United States, Germany, the Netherlands, and Hong Kong." },
-  { prompt: "Which of these has one of the 5 longest coastlines in the world?", options: ["Philippines", "Australia", "Norway", "Chile"], answer: 0, fact: "Top 5 by coastline length: Canada, Indonesia, Russia, the Philippines, and Japan." },
-  { prompt: "Which of these is commonly cited among the 5 countries with the most islands?", options: ["Finland", "Greece", "Philippines", "Croatia"], answer: 0, fact: "National inventories put Sweden, Norway, Finland, Canada, and Indonesia at the top; island counts vary widely by definition." },
-  { prompt: "Which of these has one of the 5 highest numbers of land border neighbors?", options: ["Brazil", "India", "Austria", "France"], answer: 0, fact: "Top 5 by land neighbors: China and Russia (14 each), Brazil (10), and the DR Congo and Germany (9 each)." },
-  { prompt: "Which of these has one of the 5 highest counts of UNESCO World Heritage Sites?", options: ["Spain", "Greece", "Mexico", "India"], answer: 0, fact: "Top 5: Italy (60), China (59), Germany (54), France (53), and Spain (50)." },
-  { prompt: "Which of these has one of the 5 largest total forest areas in the world?", options: ["China", "Indonesia", "DR Congo", "Peru"], answer: 0, fact: "Top 5 by forest area: Russia, Brazil, Canada, the United States, and China." },
-  { prompt: "Which of these has one of the 5 highest shares of its land covered by forest?", options: ["Gabon", "Brazil", "Republic of Congo", "Malaysia"], answer: 0, fact: "Top 5 by forest share: Suriname, Micronesia, Gabon, Palau, and the Solomon Islands, all over 90%." },
-  { prompt: "Which of these has one of the 5 largest total areas of agricultural land?", options: ["Australia", "India", "Argentina", "Canada"], answer: 0, fact: "Top 5: China, the United States, Australia, Brazil, and Russia." },
-  { prompt: "Which of these is one of the 5 largest cereal producers in the world?", options: ["India", "Argentina", "Ukraine", "Indonesia"], answer: 0, fact: "Top 5 cereal producers: China, the United States, India, Brazil, and Russia." },
-  { prompt: "Which of these carries one of the 5 highest volumes of air passenger traffic, per airline nationality?", options: ["Ireland", "Germany", "United Kingdom", "United Arab Emirates"], answer: 0, fact: "Top 5: the United States, China, Ireland, India, and T\u00fcrkiye \u2014 Ireland ranks high because of its hub carriers, not its population." },
-  { prompt: "Which of these has one of the 5 largest urban populations in the world?", options: ["Brazil", "Nigeria", "Russia", "Japan"], answer: 0, fact: "Top 5 by urban population: China, India, the United States, Brazil, and Indonesia." },
-  { prompt: "Which of these has one of the 5 largest rural populations in the world?", options: ["Bangladesh", "Nigeria", "Ethiopia", "Vietnam"], answer: 0, fact: "Top 5 by rural population: India, China, Pakistan, Bangladesh, and Indonesia." },
-  { prompt: "Which of these has one of the 5 highest shares of land under environmental protection?", options: ["Bhutan", "Costa Rica", "Namibia", "Kenya"], answer: 0, fact: "Top 5: Seychelles, Venezuela, Bhutan, Liechtenstein, and Bulgaria, all sovereign states." },
-  { prompt: "Which of these is one of the 5 largest generators of solar electricity?", options: ["Japan", "Australia", "Spain", "South Korea"], answer: 0, fact: "Top 5 solar generators: China, the United States, India, Japan, and Germany." },
-  { prompt: "Which of these is one of the 5 largest exporters of crude petroleum by value?", options: ["Canada", "United Arab Emirates", "Kuwait", "Norway"], answer: 0, fact: "Top 5 crude oil exporters: Saudi Arabia, Russia, Canada, the United States, and Iraq." },
-  { prompt: "Which of these is one of the 5 largest rice exporters in the world?", options: ["Pakistan", "Myanmar", "China", "Cambodia"], answer: 0, fact: "Top 5 rice exporters: India, Thailand, Vietnam, Pakistan, and the United States." },
-  { prompt: "Which of these is one of the 5 largest cocoa bean exporters in the world?", options: ["Ecuador", "Indonesia", "Brazil", "Peru"], answer: 0, fact: "Top 5: C\u00f4te d'Ivoire, Ecuador, Ghana, Nigeria, and Cameroon." },
-  { prompt: "Which of these is one of the 5 largest wheat exporters in the world?", options: ["Australia", "Argentina", "France", "India"], answer: 0, fact: "Top 5 wheat exporters: Russia, Australia, Canada, the United States, and Ukraine." },
-  { prompt: "Which of these is one of the 5 largest banana exporters in the world?", options: ["Guatemala", "Honduras", "Brazil", "Mexico"], answer: 0, fact: "Top 5: Ecuador, the Philippines, Guatemala, Costa Rica, and Colombia." },
-  { prompt: "Which of these is one of the 5 largest producers of green coffee?", options: ["Indonesia", "Mexico", "Peru", "Honduras"], answer: 0, fact: "Top 5 coffee producers: Brazil, Vietnam, Indonesia, Colombia, and Ethiopia." },
-  { prompt: "Which of these is one of the 5 countries with the highest share of population using the internet?", options: ["Denmark", "Norway", "Iceland", "Finland"], answer: 0, fact: "Top 5: Bahrain, Kuwait, Saudi Arabia, and the UAE at 100%, and Denmark at nearly 100%." },
-  { prompt: "Which of these ranks among the 5 highest countries by GDP per capita?", options: ["Ireland", "Norway", "Qatar", "Singapore"], answer: 0, fact: "Top 5 by GDP per capita: Monaco, Liechtenstein, Luxembourg, Ireland, and Switzerland." },
+  // ---- Top 5 countries by... (list all 5, no scoring, just reveal) ----
+  { type: "top5", topic: "total area", answers: ["Russia", "Canada", "United States", "China", "Brazil"] },
+  { type: "top5", topic: "population", answers: ["India", "China", "United States", "Indonesia", "Pakistan"] },
+  { type: "top5", topic: "nominal GDP", answers: ["United States", "China", "Germany", "Japan", "United Kingdom"] },
+  { type: "top5", topic: "GDP adjusted for purchasing power (PPP)", answers: ["China", "United States", "India", "Russia", "Japan"] },
+  { type: "top5", topic: "merchandise exports", answers: ["China", "United States", "Germany", "Netherlands", "Hong Kong"] },
+  { type: "top5", topic: "coastline length", answers: ["Canada", "Indonesia", "Russia", "Philippines", "Japan"] },
+  { type: "top5", topic: "number of islands", answers: ["Sweden", "Norway", "Finland", "Canada", "Indonesia"] },
+  { type: "top5", topic: "number of land border neighbors", answers: ["China", "Russia", "Brazil", "DR Congo", "Germany"] },
+  { type: "top5", topic: "UNESCO World Heritage Sites", answers: ["Italy", "China", "Germany", "France", "Spain"] },
+  { type: "top5", topic: "total forest area", answers: ["Russia", "Brazil", "Canada", "United States", "China"] },
+  { type: "top5", topic: "share of land covered by forest", answers: ["Suriname", "Micronesia", "Gabon", "Palau", "Solomon Islands"] },
+  { type: "top5", topic: "total agricultural land", answers: ["China", "United States", "Australia", "Brazil", "Russia"] },
+  { type: "top5", topic: "cereal production", answers: ["China", "United States", "India", "Brazil", "Russia"] },
+  { type: "top5", topic: "air passenger traffic (by airline nationality)", answers: ["United States", "China", "Ireland", "India", "T\u00fcrkiye"] },
+  { type: "top5", topic: "urban population", answers: ["China", "India", "United States", "Brazil", "Indonesia"] },
+  { type: "top5", topic: "rural population", answers: ["India", "China", "Pakistan", "Bangladesh", "Indonesia"] },
+  { type: "top5", topic: "share of land under environmental protection", answers: ["Seychelles", "Venezuela", "Bhutan", "Liechtenstein", "Bulgaria"] },
+  { type: "top5", topic: "solar electricity generation", answers: ["China", "United States", "India", "Japan", "Germany"] },
+  { type: "top5", topic: "crude petroleum exports", answers: ["Saudi Arabia", "Russia", "Canada", "United States", "Iraq"] },
+  { type: "top5", topic: "rice exports", answers: ["India", "Thailand", "Vietnam", "Pakistan", "United States"] },
+  { type: "top5", topic: "cocoa bean exports", answers: ["C\u00f4te d'Ivoire", "Ecuador", "Ghana", "Nigeria", "Cameroon"] },
+  { type: "top5", topic: "wheat exports", answers: ["Russia", "Australia", "Canada", "United States", "Ukraine"] },
+  { type: "top5", topic: "banana exports", answers: ["Ecuador", "Philippines", "Guatemala", "Costa Rica", "Colombia"] },
+  { type: "top5", topic: "green coffee production", answers: ["Brazil", "Vietnam", "Indonesia", "Colombia", "Ethiopia"] },
+  { type: "top5", topic: "share of population using the internet", answers: ["Bahrain", "Kuwait", "Saudi Arabia", "United Arab Emirates", "Denmark"] },
+  { type: "top5", topic: "GDP per capita", answers: ["Monaco", "Liechtenstein", "Luxembourg", "Ireland", "Switzerland"] },
 
   // ---- Only feature (river/lake/sea/mountain/desert/strait) that... ----
   { prompt: "Which is the only sea in the world with no land boundary at all?", options: ["Sargasso Sea", "Caspian Sea", "Coral Sea", "Bering Sea"], answer: 0, fact: "Ocean currents, not coastlines, define the Sargasso Sea's borders in the North Atlantic." },
@@ -201,9 +201,14 @@ export default function App() {
   const [bestStreak, setBestStreak] = useState(0);
   const [spin, setSpin] = useState(false);
   const [revealed, setRevealed] = useState(false);
+  const [guesses, setGuesses] = useState(["", "", "", "", ""]);
+  const [top5Revealed, setTop5Revealed] = useState(false);
 
   const startGame = useCallback(() => {
     const picked = shuffle(BANK).slice(0, ROUND_SIZE).map((q) => {
+      if (q.type === "top5") {
+        return { type: "top5", topic: q.topic, answers: q.answers };
+      }
       const optionOrder = shuffle(q.options.map((opt, i) => ({ opt, i })));
       return {
         prompt: q.prompt,
@@ -219,6 +224,8 @@ export default function App() {
     setBestStreak(0);
     setSelected(null);
     setRevealed(false);
+    setGuesses(["", "", "", "", ""]);
+    setTop5Revealed(false);
     setPhase("quiz");
   }, []);
 
@@ -245,15 +252,19 @@ export default function App() {
     if (index + 1 >= round.length) {
       setPhase("end");
     } else {
-       setIndex((i) => i + 1);
+      setIndex((i) => i + 1);
       setSelected(null);
       setRevealed(false);
+      setGuesses(["", "", "", "", ""]);
+      setTop5Revealed(false);
     }
   };
 
+  const answered = current && (current.type === "top5" ? top5Revealed : selected !== null);
+
   const progressPct = useMemo(
-    () => (round.length ? Math.round(((index + (selected !== null ? 1 : 0)) / round.length) * 100) : 0),
-    [index, selected, round.length]
+    () => (round.length ? Math.round(((index + (answered ? 1 : 0)) / round.length) * 100) : 0),
+    [index, answered, round.length]
   );
 
   const Shell = ({ children }) => (
@@ -314,7 +325,8 @@ export default function App() {
   }
 
   if (phase === "end") {
-    const pct = Math.round((score / round.length) * 100);
+    const scoredCount = round.filter((q) => q.type !== "top5").length;
+    const pct = scoredCount ? Math.round((score / scoredCount) * 100) : 0;
     let verdict = "Novice cartographer";
     if (pct >= 90) verdict = "Master of superlatives";
     else if (pct >= 70) verdict = "Seasoned navigator";
@@ -330,7 +342,12 @@ export default function App() {
           <Card className="w-full p-8">
             <p className="text-6xl font-bold" style={{ color: "#12211f", fontFamily: "Georgia, serif" }}>
               {score}
-              <span className="text-2xl" style={{ color: "#7a6a45" }}> / {round.length}</span>
+              <span className="text-2xl" style={{ color: "#7a6a45" }}> / {scoredCount}</span>
+            </p>
+            <p className="mt-1 text-xs" style={{ color: "#7a6a45" }}>
+              {round.length - scoredCount > 0
+                ? `plus ${round.length - scoredCount} top-5 round${round.length - scoredCount === 1 ? "" : "s"} played for fun, unscored`
+                : ""}
             </p>
             <p className="mt-2 text-sm tracking-wide uppercase" style={{ color: "#7a6a45" }}>{verdict}</p>
             <div className="mt-5 flex justify-center gap-8 text-sm" style={{ color: "#3a2f1c" }}>
@@ -382,63 +399,129 @@ export default function App() {
         </div>
 
         <Card className="p-6 md:p-8">
-          <h2 className="text-xl md:text-2xl font-semibold leading-snug" style={{ color: "#12211f", fontFamily: "Georgia, serif" }}>
-            {current.prompt}
-          </h2>
-
-          {!revealed ? (
-            <div className="mt-6 flex flex-col items-center gap-3 py-4">
-              <p className="text-xs uppercase tracking-widest text-center" style={{ color: "#7a6a45" }}>
-                Take your best guess first, then reveal the options.
+          {current.type === "top5" ? (
+            <>
+              <h2 className="text-xl md:text-2xl font-semibold leading-snug" style={{ color: "#12211f", fontFamily: "Georgia, serif" }}>
+                List the top 5 countries by {current.topic}.
+              </h2>
+              <p className="mt-1 text-xs uppercase tracking-widest" style={{ color: "#7a6a45" }}>
+                Just for fun, not scored, order doesn't matter.
               </p>
-              <button
-                onClick={() => setRevealed(true)}
-                className="px-6 py-2.5 rounded-sm font-semibold tracking-wide uppercase text-xs"
-                style={{ background: "#12211f", color: "#f3ead4" }}
-              >
-                Reveal choices
-              </button>
-            </div>
-          ) : (
-          <div className="mt-6 grid grid-cols-1 gap-3">
-            {current.options.map((opt, i) => {
-              const isCorrect = i === current.answer;
-              const isChosen = i === selected;
-              let style = { background: "#efe3c7", borderColor: "#d8c69a", color: "#12211f" };
-              if (selected !== null) {
-                if (isCorrect) style = { background: "#3f6b4a", borderColor: "#3f6b4a", color: "#f3ead4" };
-                else if (isChosen) style = { background: "#a4462f", borderColor: "#a4462f", color: "#f3ead4" };
-                else style = { background: "#efe3c7", borderColor: "#d8c69a", color: "#8a7d5c", opacity: 0.6 };
-              }
-              return (
+
+              <div className="mt-5 grid grid-cols-1 gap-2">
+                {[0, 1, 2, 3, 4].map((i) => {
+                  const guess = guesses[i].trim().toLowerCase();
+                  const isHit = top5Revealed && guess && current.answers.some((a) => a.toLowerCase() === guess);
+                  return (
+                    <input
+                      key={i}
+                      type="text"
+                      value={guesses[i]}
+                      disabled={top5Revealed}
+                      onChange={(e) => {
+                        const next = [...guesses];
+                        next[i] = e.target.value;
+                        setGuesses(next);
+                      }}
+                      placeholder={`Guess #${i + 1}`}
+                      className="px-4 py-3 rounded-sm border text-sm md:text-base font-medium"
+                      style={
+                        top5Revealed
+                          ? isHit
+                            ? { background: "#3f6b4a", borderColor: "#3f6b4a", color: "#f3ead4" }
+                            : { background: "#efe3c7", borderColor: "#d8c69a", color: "#8a7d5c", opacity: 0.7 }
+                          : { background: "#efe3c7", borderColor: "#d8c69a", color: "#12211f" }
+                      }
+                    />
+                  );
+                })}
+              </div>
+
+              {!top5Revealed ? (
                 <button
-                  key={i}
-                  onClick={() => choose(i)}
-                  disabled={selected !== null}
-                  className="text-left px-4 py-3 rounded-sm border text-sm md:text-base font-medium transition-colors"
-                  style={style}
+                  onClick={() => setTop5Revealed(true)}
+                  className="mt-4 px-6 py-2.5 rounded-sm font-semibold tracking-wide uppercase text-xs"
+                  style={{ background: "#12211f", color: "#f3ead4" }}
                 >
-                  {opt}
+                  Reveal answers
                 </button>
-              );
-           })}
-          </div>
-          )}
+              ) : (
+                <div className="mt-5 pt-4 border-t" style={{ borderColor: "#d8c69a" }}>
+                  <p className="text-sm leading-relaxed" style={{ color: "#3a2f1c" }}>
+                    <span className="font-semibold">The top 5: </span>
+                    {current.answers.join(", ")}.
+                  </p>
+                  <button
+                    onClick={next}
+                    className="mt-4 px-6 py-2.5 rounded-sm font-semibold tracking-wide uppercase text-xs"
+                    style={{ background: "#12211f", color: "#f3ead4" }}
+                  >
+                    {index + 1 >= round.length ? "See results" : "Next question"}
+                  </button>
+                </div>
+              )}
+            </>
+          ) : (
+            <>
+              <h2 className="text-xl md:text-2xl font-semibold leading-snug" style={{ color: "#12211f", fontFamily: "Georgia, serif" }}>
+                {current.prompt}
+              </h2>
 
-          {revealed && selected !== null && (
-            <div className="mt-5 pt-4 border-t" style={{ borderColor: "#d8c69a" }}>
-              <p className="text-sm leading-relaxed" style={{ color: "#3a2f1c" }}>
-                <span className="font-semibold">{selected === current.answer ? "Correct. " : "Not quite. "}</span>
-                {current.fact}
-              </p>
-              <button
-                onClick={next}
-                className="mt-4 px-6 py-2.5 rounded-sm font-semibold tracking-wide uppercase text-xs"
-                style={{ background: "#12211f", color: "#f3ead4" }}
-              >
-                {index + 1 >= round.length ? "See results" : "Next question"}
-              </button>
-            </div>
+              {!revealed ? (
+                <div className="mt-6 flex flex-col items-center gap-3 py-4">
+                  <p className="text-xs uppercase tracking-widest text-center" style={{ color: "#7a6a45" }}>
+                    Take your best guess first, then reveal the options.
+                  </p>
+                  <button
+                    onClick={() => setRevealed(true)}
+                    className="px-6 py-2.5 rounded-sm font-semibold tracking-wide uppercase text-xs"
+                    style={{ background: "#12211f", color: "#f3ead4" }}
+                  >
+                    Reveal choices
+                  </button>
+                </div>
+              ) : (
+              <div className="mt-6 grid grid-cols-1 gap-3">
+                {current.options.map((opt, i) => {
+                  const isCorrect = i === current.answer;
+                  const isChosen = i === selected;
+                  let style = { background: "#efe3c7", borderColor: "#d8c69a", color: "#12211f" };
+                  if (selected !== null) {
+                    if (isCorrect) style = { background: "#3f6b4a", borderColor: "#3f6b4a", color: "#f3ead4" };
+                    else if (isChosen) style = { background: "#a4462f", borderColor: "#a4462f", color: "#f3ead4" };
+                    else style = { background: "#efe3c7", borderColor: "#d8c69a", color: "#8a7d5c", opacity: 0.6 };
+                  }
+                  return (
+                    <button
+                      key={i}
+                      onClick={() => choose(i)}
+                      disabled={selected !== null}
+                      className="text-left px-4 py-3 rounded-sm border text-sm md:text-base font-medium transition-colors"
+                      style={style}
+                    >
+                      {opt}
+                    </button>
+                  );
+                })}
+              </div>
+              )}
+
+              {revealed && selected !== null && (
+                <div className="mt-5 pt-4 border-t" style={{ borderColor: "#d8c69a" }}>
+                  <p className="text-sm leading-relaxed" style={{ color: "#3a2f1c" }}>
+                    <span className="font-semibold">{selected === current.answer ? "Correct. " : "Not quite. "}</span>
+                    {current.fact}
+                  </p>
+                  <button
+                    onClick={next}
+                    className="mt-4 px-6 py-2.5 rounded-sm font-semibold tracking-wide uppercase text-xs"
+                    style={{ background: "#12211f", color: "#f3ead4" }}
+                  >
+                    {index + 1 >= round.length ? "See results" : "Next question"}
+                  </button>
+                </div>
+              )}
+            </>
           )}
         </Card>
       </div>
